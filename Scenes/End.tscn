@@ -7,14 +7,22 @@
 [ext_resource path="res://Fonts/heartbit2x.tres" type="DynamicFont" id=5]
 [ext_resource path="res://Scripts/End.gd" type="Script" id=6]
 
-[node name="End" type="Node2D"]
+[node name="End" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
 script = ExtResource( 6 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="PlayAgain" type="TextureButton" parent="."]
-margin_left = 48.0
-margin_top = 128.0
-margin_right = 144.0
-margin_bottom = 168.0
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 70.0
+margin_top = -120.0
+margin_right = 166.0
+margin_bottom = -80.0
+rect_scale = Vector2( 2, 2 )
 texture_normal = ExtResource( 1 )
 texture_pressed = ExtResource( 1 )
 texture_hover = ExtResource( 4 )
@@ -23,10 +31,15 @@ __meta__ = {
 }
 
 [node name="BackToMenu" type="TextureButton" parent="."]
-margin_left = 176.0
-margin_top = 128.0
-margin_right = 272.0
-margin_bottom = 168.0
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -274.0
+margin_top = -120.0
+margin_right = -178.0
+margin_bottom = -80.0
+rect_scale = Vector2( 2, 2 )
 texture_normal = ExtResource( 3 )
 texture_pressed = ExtResource( 3 )
 texture_hover = ExtResource( 2 )
@@ -34,11 +47,23 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="GradeLabel" type="Label" parent="."]
-margin_left = 84.0
-margin_top = 8.0
-margin_right = 148.0
-margin_bottom = 22.0
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -179.5
+margin_right = 179.5
+margin_bottom = 388.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Grade" type="HBoxContainer" parent="VBoxContainer"]
+margin_right = 359.0
+margin_bottom = 52.0
+
+[node name="GradeLabel" type="Label" parent="VBoxContainer/Grade"]
+margin_right = 128.0
+margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
 text = "grade:"
@@ -47,11 +72,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="GradeNumber" type="Label" parent="."]
-margin_left = 160.0
-margin_top = 8.0
-margin_right = 224.0
-margin_bottom = 22.0
+[node name="GradeNumber" type="Label" parent="VBoxContainer/Grade"]
+margin_left = 132.0
+margin_right = 132.0
+margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
 align = 2
@@ -60,24 +84,26 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ScoreLabel" type="Label" parent="."]
-margin_left = 84.0
-margin_top = 24.0
-margin_right = 148.0
-margin_bottom = 38.0
+[node name="Score" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 56.0
+margin_right = 359.0
+margin_bottom = 108.0
+
+[node name="ScoreLabel" type="Label" parent="VBoxContainer/Score"]
+margin_right = 232.0
+margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
-text = "final score: "
+text = "final score:"
 valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ScoreNumber" type="Label" parent="."]
-margin_left = 160.0
-margin_top = 24.0
-margin_right = 224.0
-margin_bottom = 38.0
+[node name="ScoreNumber" type="Label" parent="VBoxContainer/Score"]
+margin_left = 236.0
+margin_right = 236.0
+margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
 align = 2
@@ -86,11 +112,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ComboLabel" type="Label" parent="."]
-margin_left = 84.0
-margin_top = 40.0
-margin_right = 148.0
-margin_bottom = 54.0
+[node name="Combo" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 112.0
+margin_right = 359.0
+margin_bottom = 164.0
+
+[node name="ComboLabel" type="Label" parent="VBoxContainer/Combo"]
+margin_right = 252.0
+margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
 text = "max combo:"
@@ -99,11 +128,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="ComboNumber" type="Label" parent="."]
-margin_left = 160.0
-margin_top = 40.0
-margin_right = 224.0
-margin_bottom = 54.0
+[node name="ComboNumber" type="Label" parent="VBoxContainer/Combo"]
+margin_left = 256.0
+margin_right = 256.0
+margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
 align = 2
@@ -112,11 +140,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="GreatLabel" type="Label" parent="."]
-margin_left = 84.0
-margin_top = 56.0
-margin_right = 148.0
-margin_bottom = 70.0
+[node name="Great" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 168.0
+margin_right = 359.0
+margin_bottom = 220.0
+
+[node name="GreatLabel" type="Label" parent="VBoxContainer/Great"]
+margin_right = 120.0
+margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
 text = "great:"
@@ -125,11 +156,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="GreatNumber" type="Label" parent="."]
-margin_left = 160.0
-margin_top = 56.0
-margin_right = 224.0
-margin_bottom = 70.0
+[node name="GreatNumber" type="Label" parent="VBoxContainer/Great"]
+margin_left = 124.0
+margin_right = 124.0
+margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
 align = 2
@@ -138,11 +168,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="GoodLabel" type="Label" parent="."]
-margin_left = 84.0
-margin_top = 72.0
-margin_right = 148.0
-margin_bottom = 86.0
+[node name="Good" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 224.0
+margin_right = 359.0
+margin_bottom = 276.0
+
+[node name="GoodLabel" type="Label" parent="VBoxContainer/Good"]
+margin_right = 108.0
+margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
 text = "good:"
@@ -151,11 +184,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="GoodNumber" type="Label" parent="."]
-margin_left = 160.0
-margin_top = 72.0
-margin_right = 224.0
-margin_bottom = 86.0
+[node name="GoodNumber" type="Label" parent="VBoxContainer/Good"]
+margin_left = 112.0
+margin_right = 112.0
+margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
 align = 2
@@ -164,11 +196,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="OkayLabel" type="Label" parent="."]
-margin_left = 84.0
-margin_top = 88.0
-margin_right = 148.0
-margin_bottom = 102.0
+[node name="Okay" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 280.0
+margin_right = 359.0
+margin_bottom = 332.0
+
+[node name="OkayLabel" type="Label" parent="VBoxContainer/Okay"]
+margin_right = 108.0
+margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
 text = "okay:"
@@ -177,11 +212,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="OkayNumber" type="Label" parent="."]
-margin_left = 160.0
-margin_top = 88.0
-margin_right = 224.0
-margin_bottom = 102.0
+[node name="OkayNumber" type="Label" parent="VBoxContainer/Okay"]
+margin_left = 112.0
+margin_right = 112.0
+margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
 align = 2
@@ -190,11 +224,14 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MissedLabel" type="Label" parent="."]
-margin_left = 84.0
-margin_top = 104.0
-margin_right = 148.0
-margin_bottom = 118.0
+[node name="Missed" type="HBoxContainer" parent="VBoxContainer"]
+margin_top = 336.0
+margin_right = 359.0
+margin_bottom = 388.0
+
+[node name="MissedLabel" type="Label" parent="VBoxContainer/Missed"]
+margin_right = 152.0
+margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
 text = "missed:"
@@ -203,11 +240,10 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MissedNumber" type="Label" parent="."]
-margin_left = 160.0
-margin_top = 104.0
-margin_right = 224.0
-margin_bottom = 118.0
+[node name="MissedNumber" type="Label" parent="VBoxContainer/Missed"]
+margin_left = 156.0
+margin_right = 156.0
+margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
 align = 2

@@ -1,4 +1,4 @@
-extends Node2D
+extends Control
 
 var score = 0
 var combo = 0
@@ -24,6 +24,10 @@ var spawn_4_beat = 0
 var lane = 0
 var rand = 0
 var note = load("res://Scenes/Note.tscn")
+var r = 1
+var g = 0
+var b = 0
+var letra = "r"
 
 func _ready():
 	randomize()
@@ -161,3 +165,38 @@ func increment_score(by):
 func reset_combo():
 	combo = 0
 	$Combo.text = ""
+
+func cambiar_color(delta, primero, segundo, siguiente_letra):
+	var lim_sup = 0.8
+	var lim_inf = 0.2
+	if primero < lim_sup:
+		primero += 1 * delta;
+		if primero >= lim_sup:
+			primero = lim_sup
+	else:
+		segundo -= 1 * delta;
+		if segundo <= lim_inf:
+			segundo = lim_inf
+			letra = siguiente_letra
+	return [primero, segundo]
+
+func actualizar_colores(delta):
+	var arr
+	if letra == "r":
+		arr = cambiar_color(delta, r, g, "g")
+		r = arr[0]
+		g = arr[1]
+	elif letra == "g":
+		arr = cambiar_color(delta, g, b, "b")
+		g = arr[0]
+		b = arr[1]
+	elif letra == "b":
+		arr = cambiar_color(delta, b, r, "r")
+		b = arr[0]
+		r = arr[1]
+	pass
+
+func _process(delta):
+	$Fondo/ColorRect.color = Color(r, g, b, 0.1)
+	
+	actualizar_colores(delta)

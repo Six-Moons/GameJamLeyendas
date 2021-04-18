@@ -1,16 +1,59 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Scenes/ArrowButton.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Conductor.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Scripts/Game.gd" type="Script" id=3]
+[ext_resource path="res://Scripts/Baile.gd" type="Script" id=3]
 [ext_resource path="res://Fonts/heartbit2x.tres" type="DynamicFont" id=4]
 [ext_resource path="res://Sounds/song.ogg" type="AudioStream" id=5]
 [ext_resource path="res://Sprites/game/road/road.png" type="Texture" id=6]
 [ext_resource path="res://Frames/arrow_left_frames.tres" type="SpriteFrames" id=7]
 [ext_resource path="res://Frames/arrow_right_frames.tres" type="SpriteFrames" id=8]
+[ext_resource path="res://Sprites/game/Fondo 1 fiesta.png" type="Texture" id=9]
 
-[node name="Bailes" type="Node2D"]
+[node name="Bailes" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
 script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Fondo" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="Fondo"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 9 )
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="Fondo"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.494118, 0.298039, 0.298039, 0.403922 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect2" type="ColorRect" parent="Fondo"]
+anchor_left = 0.5
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -231.859
+margin_top = -1.25995
+margin_right = 242.141
+margin_bottom = -1.25995
+color = Color( 1, 1, 1, 0.227451 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="road" type="Sprite" parent="."]
 position = Vector2( 278, 0 )

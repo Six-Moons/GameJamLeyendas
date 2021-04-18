@@ -1,14 +1,14 @@
-extends Node2D
+extends Control
 
 
 func _ready():
-	$GradeNumber.text = Global.grade
-	$ScoreNumber.text = str(Global.score)
-	$ComboNumber.text = str(Global.combo)
-	$GreatNumber.text = str(Global.great)
-	$GoodNumber.text = str(Global.good)
-	$OkayNumber.text = str(Global.okay)
-	$MissedNumber.text = str(Global.missed)
+	$VBoxContainer/Grade/GradeNumber.text = Global.grade
+	$VBoxContainer/Score/ScoreNumber.text = str(Global.score)
+	$VBoxContainer/Combo/ComboNumber.text = str(Global.combo)
+	$VBoxContainer/Great/GreatNumber.text = str(Global.great)
+	$VBoxContainer/Good/GoodNumber.text = str(Global.good)
+	$VBoxContainer/Okay/OkayNumber.text = str(Global.okay)
+	$VBoxContainer/Missed/MissedNumber.text = str(Global.missed)
 	
 
 
