@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Scenes/Baile.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Music/CadejosDance170BPM_48k_16bit.wav" type="AudioStream" id=2]
+[ext_resource path="res://Scripts/Baile_3.gd" type="Script" id=3]
+
+[node name="Ritmo" instance=ExtResource( 1 )]
+script = ExtResource( 3 )
+
+[node name="ColorRect2" parent="Fondo" index="2"]
+margin_left = -240.0
+margin_top = 0.0
+margin_right = 240.0
+margin_bottom = 6.10352e-05
+
+[node name="road" parent="." index="1"]
+position = Vector2( 400, 0 )
+
+[node name="ArrowUp" parent="." index="2"]
+position = Vector2( 640, 656 )
+
+[node name="ArrowLeft" parent="." index="3"]
+position = Vector2( 480, 656 )
+
+[node name="ArrowButton" parent="." index="4"]
+position = Vector2( 800, 656 )
+
+[node name="Conductor" parent="." index="7"]
+stream = ExtResource( 2 )
+bpm = 170
