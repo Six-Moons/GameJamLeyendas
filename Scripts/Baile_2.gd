@@ -31,7 +31,7 @@ var letra = "r"
 
 func _ready():
 	randomize()
-	$Conductor.play_with_beat_offset(8)
+	$Conductor.play_with_beat_offset(5)
 
 
 func _input(event):
@@ -52,37 +52,87 @@ func _on_Conductor_measure(position):
 
 func _on_Conductor_beat(position):
 	song_position_in_beats = position
-	if song_position_in_beats > 36:
+	if song_position_in_beats > 1:
+		spawn_1_beat = 1
+		spawn_2_beat = 0
+		spawn_3_beat = 1
+		spawn_4_beat = 1
+	if song_position_in_beats > 9:
 		spawn_1_beat = 1
 		spawn_2_beat = 1
 		spawn_3_beat = 1
 		spawn_4_beat = 1
-	if song_position_in_beats > 98:
-		spawn_1_beat = 2
-		spawn_2_beat = 0
+	if song_position_in_beats > 17:
+		spawn_1_beat = 1
+		spawn_2_beat = 1
 		spawn_3_beat = 1
-		spawn_4_beat = 0
-	if song_position_in_beats > 132:
-		spawn_1_beat = 0
-		spawn_2_beat = 2
-		spawn_3_beat = 0
 		spawn_4_beat = 2
-	if song_position_in_beats > 162:
-		spawn_1_beat = 2
+	if song_position_in_beats > 33:
+		spawn_1_beat = 1
+		spawn_2_beat = 1
+		spawn_3_beat = 2
+		spawn_4_beat = 0
+	if song_position_in_beats > 49:
+		spawn_1_beat = 1
+		spawn_2_beat = 1
+		spawn_3_beat = 2
+		spawn_4_beat = 2
+	if song_position_in_beats > 65:
+		spawn_1_beat = 1
 		spawn_2_beat = 2
+		spawn_3_beat = 1
+		spawn_4_beat = 2
+	if song_position_in_beats > 81:
+		spawn_1_beat = 1
+		spawn_2_beat = 1
 		spawn_3_beat = 1
 		spawn_4_beat = 1
-	if song_position_in_beats > 173:
-		spawn_1_beat = 2
+	if song_position_in_beats > 93:
+		spawn_1_beat = 1
+		spawn_2_beat = 1
+		spawn_3_beat = 3
+		spawn_4_beat = 0
+	if song_position_in_beats > 97:
+		spawn_1_beat = 1
+		spawn_2_beat = 1
+		spawn_3_beat = 0
+		spawn_4_beat = 1
+	if song_position_in_beats > 105:
+		spawn_1_beat = 1
+		spawn_2_beat = 1
+		spawn_3_beat = 1
+		spawn_4_beat = 1
+	if song_position_in_beats > 121:
+		spawn_1_beat = 1
+		spawn_2_beat = 1
+		spawn_3_beat = 2
+		spawn_4_beat = 1
+	if song_position_in_beats > 137:
+		spawn_1_beat = 1
 		spawn_2_beat = 2
 		spawn_3_beat = 1
 		spawn_4_beat = 2
-	if song_position_in_beats > 188:
+	if song_position_in_beats > 153:
+		spawn_1_beat = 2
+		spawn_2_beat = 1
+		spawn_3_beat = 2
+		spawn_4_beat = 2
+	if song_position_in_beats > 169:
+		spawn_1_beat = 2
+		spawn_2_beat = 2
+		spawn_3_beat = 2
+		spawn_4_beat = 2
+	if song_position_in_beats > 185:
+		spawn_1_beat = 3
+		spawn_2_beat = 0
+		spawn_3_beat = 0
+		spawn_4_beat = 0
+	if song_position_in_beats > 186:
 		spawn_1_beat = 0
 		spawn_2_beat = 0
 		spawn_3_beat = 0
 		spawn_4_beat = 0
-	if song_position_in_beats > 196:
+	if song_position_in_beats > 192:
 		Global.set_score(score)
 		Global.combo = max_combo
 		Global.great = great
