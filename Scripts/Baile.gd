@@ -9,7 +9,7 @@ var good = 0
 var okay = 0
 var missed = 0
 
-var bpm = 115
+var bpm = 137
 
 var song_position = 0.0
 var song_position_in_beats = 0
@@ -77,37 +77,7 @@ func _on_Conductor_beat(position):
 		spawn_2_beat = 2
 		spawn_3_beat = 1
 		spawn_4_beat = 2
-	if song_position_in_beats > 228:
-		spawn_1_beat = 0
-		spawn_2_beat = 2
-		spawn_3_beat = 1
-		spawn_4_beat = 2
-	if song_position_in_beats > 258:
-		spawn_1_beat = 1
-		spawn_2_beat = 2
-		spawn_3_beat = 1
-		spawn_4_beat = 2
-	if song_position_in_beats > 288:
-		spawn_1_beat = 0
-		spawn_2_beat = 2
-		spawn_3_beat = 0
-		spawn_4_beat = 2
-	if song_position_in_beats > 322:
-		spawn_1_beat = 3
-		spawn_2_beat = 2
-		spawn_3_beat = 2
-		spawn_4_beat = 1
-	if song_position_in_beats > 388:
-		spawn_1_beat = 1
-		spawn_2_beat = 0
-		spawn_3_beat = 0
-		spawn_4_beat = 0
-	if song_position_in_beats > 396:
-		spawn_1_beat = 0
-		spawn_2_beat = 0
-		spawn_3_beat = 0
-		spawn_4_beat = 0
-	if song_position_in_beats > 404:
+	if song_position_in_beats > 208:
 		Global.set_score(score)
 		Global.combo = max_combo
 		Global.great = great
