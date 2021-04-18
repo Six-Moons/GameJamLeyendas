@@ -80,7 +80,7 @@ func _on_Conductor_beat(position):
 		spawn_3_beat = 0
 		spawn_4_beat = 0
 	if song_position_in_beats > 240 + offset:
-		Global.set_score(score)
+		Global.set_score(score, 1)
 		Global.combo = max_combo
 		Global.great = great
 		Global.good = good
