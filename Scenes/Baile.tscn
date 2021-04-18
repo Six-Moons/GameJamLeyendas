@@ -8,7 +8,7 @@
 [ext_resource path="res://Sprites/game/road/road.png" type="Texture" id=6]
 [ext_resource path="res://Frames/arrow_left_frames.tres" type="SpriteFrames" id=7]
 [ext_resource path="res://Frames/arrow_right_frames.tres" type="SpriteFrames" id=8]
-[ext_resource path="res://Sprites/game/Fondo 1 fiesta.png" type="Texture" id=9]
+[ext_resource path="res://assets/Fondo 1 fiesta.png" type="Texture" id=9]
 
 [node name="Bailes" type="Control"]
 anchor_right = 1.0

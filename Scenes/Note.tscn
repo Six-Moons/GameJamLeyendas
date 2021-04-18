@@ -6,7 +6,7 @@
 [ext_resource path="res://Scripts/Note.gd" type="Script" id=4]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 4.72996, 5.09219 )
+extents = Vector2( 8.11129, 8.75212 )
 
 [node name="Note" type="Area2D" groups=[
 "note",
@@ -14,7 +14,7 @@ extents = Vector2( 4.72996, 5.09219 )
 script = ExtResource( 4 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-scale = Vector2( 4, 4 )
+scale = Vector2( 2, 2 )
 frames = ExtResource( 1 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
