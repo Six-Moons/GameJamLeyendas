@@ -31,7 +31,7 @@ var letra = "r"
 
 func _ready():
 	randomize()
-	$Conductor.play_with_beat_offset(0)
+	$Conductor.play_with_beat_offset(5)
 
 
 func _input(event):
@@ -52,47 +52,57 @@ func _on_Conductor_measure(position):
 
 func _on_Conductor_beat(position):
 	song_position_in_beats = position
-	if song_position_in_beats > 12:
+	if song_position_in_beats > 1:
 		spawn_1_beat = 1
-		spawn_2_beat = 0
+		spawn_2_beat = 1
 		spawn_3_beat = 1
 		spawn_4_beat = 0
-	if song_position_in_beats > 28:
+	if song_position_in_beats > 17:
+		spawn_1_beat = 1
+		spawn_2_beat = 1
+		spawn_3_beat = 1
+		spawn_4_beat = 2
+	if song_position_in_beats > 33:
 		spawn_1_beat = 1
 		spawn_2_beat = 1
 		spawn_3_beat = 1
 		spawn_4_beat = 1
-	if song_position_in_beats > 60:
+	if song_position_in_beats > 65:
 		spawn_1_beat = 0
 		spawn_2_beat = 2
 		spawn_3_beat = 0
 		spawn_4_beat = 2
-	if song_position_in_beats > 94:
+	if song_position_in_beats > 97:
 		spawn_1_beat = 1
 		spawn_2_beat = 1
 		spawn_3_beat = 1
 		spawn_4_beat = 1
-	if song_position_in_beats > 118:
-		spawn_1_beat = 0
-		spawn_2_beat = 2
-		spawn_3_beat = 0
-		spawn_4_beat = 2
-	if song_position_in_beats > 158:
-		spawn_1_beat = 1
-		spawn_2_beat = 2
-		spawn_3_beat = 1
-		spawn_4_beat = 2
-	if song_position_in_beats > 182:
+	if song_position_in_beats > 105:
 		spawn_1_beat = 1
 		spawn_2_beat = 1
 		spawn_3_beat = 1
-		spawn_4_beat = 1
-	if song_position_in_beats > 198:
+		spawn_4_beat = 2
+	if song_position_in_beats > 137:
+		spawn_1_beat = 1
+		spawn_2_beat = 2
+		spawn_3_beat = 1
+		spawn_4_beat = 2
+	if song_position_in_beats > 169:
+		spawn_1_beat = 1
+		spawn_2_beat = 1
+		spawn_3_beat = 1
+		spawn_4_beat = 2
+	if song_position_in_beats > 185:
+		spawn_1_beat = 1
+		spawn_2_beat = 1
+		spawn_3_beat = 1
+		spawn_4_beat = 0
+	if song_position_in_beats > 201:
 		spawn_1_beat = 0
 		spawn_2_beat = 0
 		spawn_3_beat = 0
 		spawn_4_beat = 0
-	if song_position_in_beats > 202:
+	if song_position_in_beats > 209:
 		Global.set_score(score)
 		Global.combo = max_combo
 		Global.great = great
