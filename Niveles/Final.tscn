@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Niveles/Template.tscn" type="PackedScene" id=1]
+
+[node name="Nivel" instance=ExtResource( 1 )]
+nombre_dialogo = "Despues4baile"
