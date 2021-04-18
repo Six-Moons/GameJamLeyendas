@@ -1,11 +1,10 @@
-extends Node2D
+extends Control
 
 export (String) var nombre_dialogo = ""
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-#	var dialogo = Dialogic.start(nombre_dialogo)
-	var dialogo = Dialogic.start("encuentro")
+	var dialogo = Dialogic.start(nombre_dialogo)
 	add_child(dialogo)
 	pass # Replace with function body.
 
