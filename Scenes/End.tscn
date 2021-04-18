@@ -15,7 +15,36 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
+[node name="Regresar" type="Button" parent="."]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -263.548
+margin_top = -117.014
+margin_right = -67.5476
+margin_bottom = -59.0137
+custom_fonts/font = ExtResource( 5 )
+text = "Regresar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Seguir" type="Button" parent="."]
+anchor_top = 1.0
+anchor_bottom = 1.0
+margin_left = 105.833
+margin_top = -115.754
+margin_right = 309.833
+margin_bottom = -57.7539
+custom_fonts/font = ExtResource( 5 )
+text = "Siguiente"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="PlayAgain" type="TextureButton" parent="."]
+visible = false
 anchor_top = 1.0
 anchor_bottom = 1.0
 margin_left = 70.0
@@ -31,6 +60,7 @@ __meta__ = {
 }
 
 [node name="BackToMenu" type="TextureButton" parent="."]
+visible = false
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
@@ -50,31 +80,31 @@ __meta__ = {
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -179.5
-margin_right = 179.5
+margin_left = -308.0
+margin_right = 308.0
 margin_bottom = 388.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Grade" type="HBoxContainer" parent="VBoxContainer"]
-margin_right = 359.0
+margin_right = 616.0
 margin_bottom = 52.0
 
 [node name="GradeLabel" type="Label" parent="VBoxContainer/Grade"]
-margin_right = 128.0
+margin_right = 244.0
 margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
-text = "grade:"
+text = "Calificacion:"
 valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="GradeNumber" type="Label" parent="VBoxContainer/Grade"]
-margin_left = 132.0
-margin_right = 132.0
+margin_left = 248.0
+margin_right = 248.0
 margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
@@ -86,23 +116,23 @@ __meta__ = {
 
 [node name="Score" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 56.0
-margin_right = 359.0
+margin_right = 616.0
 margin_bottom = 108.0
 
 [node name="ScoreLabel" type="Label" parent="VBoxContainer/Score"]
-margin_right = 232.0
+margin_right = 364.0
 margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
-text = "final score:"
+text = "Puntuación Final:"
 valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="ScoreNumber" type="Label" parent="VBoxContainer/Score"]
-margin_left = 236.0
-margin_right = 236.0
+margin_left = 368.0
+margin_right = 368.0
 margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
@@ -114,23 +144,23 @@ __meta__ = {
 
 [node name="Combo" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 112.0
-margin_right = 359.0
+margin_right = 616.0
 margin_bottom = 164.0
 
 [node name="ComboLabel" type="Label" parent="VBoxContainer/Combo"]
-margin_right = 252.0
+margin_right = 280.0
 margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
-text = "max combo:"
+text = "Mejor combo:"
 valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="ComboNumber" type="Label" parent="VBoxContainer/Combo"]
-margin_left = 256.0
-margin_right = 256.0
+margin_left = 284.0
+margin_right = 284.0
 margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
@@ -142,23 +172,23 @@ __meta__ = {
 
 [node name="Great" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 168.0
-margin_right = 359.0
+margin_right = 616.0
 margin_bottom = 220.0
 
 [node name="GreatLabel" type="Label" parent="VBoxContainer/Great"]
-margin_right = 120.0
+margin_right = 124.0
 margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
-text = "great:"
+text = "Great:"
 valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="GreatNumber" type="Label" parent="VBoxContainer/Great"]
-margin_left = 124.0
-margin_right = 124.0
+margin_left = 128.0
+margin_right = 128.0
 margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
@@ -170,23 +200,23 @@ __meta__ = {
 
 [node name="Good" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 224.0
-margin_right = 359.0
+margin_right = 616.0
 margin_bottom = 276.0
 
 [node name="GoodLabel" type="Label" parent="VBoxContainer/Good"]
-margin_right = 108.0
+margin_right = 112.0
 margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
-text = "good:"
+text = "Good:"
 valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="GoodNumber" type="Label" parent="VBoxContainer/Good"]
-margin_left = 112.0
-margin_right = 112.0
+margin_left = 116.0
+margin_right = 116.0
 margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
@@ -198,23 +228,23 @@ __meta__ = {
 
 [node name="Okay" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 280.0
-margin_right = 359.0
+margin_right = 616.0
 margin_bottom = 332.0
 
 [node name="OkayLabel" type="Label" parent="VBoxContainer/Okay"]
-margin_right = 108.0
+margin_right = 112.0
 margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
-text = "okay:"
+text = "Okay:"
 valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="OkayNumber" type="Label" parent="VBoxContainer/Okay"]
-margin_left = 112.0
-margin_right = 112.0
+margin_left = 116.0
+margin_right = 116.0
 margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
@@ -226,23 +256,23 @@ __meta__ = {
 
 [node name="Missed" type="HBoxContainer" parent="VBoxContainer"]
 margin_top = 336.0
-margin_right = 359.0
+margin_right = 616.0
 margin_bottom = 388.0
 
 [node name="MissedLabel" type="Label" parent="VBoxContainer/Missed"]
-margin_right = 152.0
+margin_right = 148.0
 margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
-text = "missed:"
+text = "Missed:"
 valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="MissedNumber" type="Label" parent="VBoxContainer/Missed"]
-margin_left = 156.0
-margin_right = 156.0
+margin_left = 152.0
+margin_right = 152.0
 margin_bottom = 52.0
 custom_fonts/font = ExtResource( 5 )
 custom_colors/font_color = Color( 0.964706, 0.839216, 0.741176, 1 )
@@ -251,5 +281,7 @@ valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
+[connection signal="pressed" from="Regresar" to="." method="_on_Regresar_pressed"]
+[connection signal="pressed" from="Seguir" to="." method="_on_Seguir_pressed"]
 [connection signal="pressed" from="PlayAgain" to="." method="_on_PlayAgain_pressed"]
 [connection signal="pressed" from="BackToMenu" to="." method="_on_BackToMenu_pressed"]
