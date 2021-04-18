@@ -28,6 +28,7 @@ func set_puntuacion_personaje(score):
 
 func set_score(new):
 	score = new
+	set_puntuacion_personaje(score)
 	if score > 250000:
 		grade = "A+"
 	elif score > 200000:

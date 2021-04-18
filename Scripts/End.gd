@@ -1,6 +1,5 @@
 extends Control
 
-
 func _ready():
 	$VBoxContainer/Grade/GradeNumber.text = Global.grade
 	$VBoxContainer/Score/ScoreNumber.text = str(Global.score)
