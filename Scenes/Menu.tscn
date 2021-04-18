@@ -1,8 +1,8 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://Scripts/Menu.gd" type="Script" id=1]
-[ext_resource path="res://Sprites/ui/play_button/play1.png" type="Texture" id=2]
-[ext_resource path="res://Sprites/ui/play_button/play2.png" type="Texture" id=3]
+[ext_resource path="res://assets/EmpezarPressed.png" type="Texture" id=2]
+[ext_resource path="res://assets/EmpezarHover.png" type="Texture" id=3]
 [ext_resource path="res://Fonts/heartbit2x.tres" type="DynamicFont" id=4]
 [ext_resource path="res://Sprites/ui/slider.png" type="Texture" id=5]
 [ext_resource path="res://Sprites/ui/slider_content.png" type="Texture" id=6]
@@ -12,6 +12,7 @@
 [ext_resource path="res://Sprites/ui/test_button/test_button2.png" type="Texture" id=10]
 [ext_resource path="res://Sounds/bell_ding.ogg" type="AudioStream" id=11]
 [ext_resource path="res://assets/PantallaInicio.png" type="Texture" id=12]
+[ext_resource path="res://assets/Empezar.png" type="Texture" id=13]
 
 [sub_resource type="StyleBoxTexture" id=1]
 texture = ExtResource( 5 )
@@ -55,16 +56,15 @@ __meta__ = {
 stream = ExtResource( 11 )
 
 [node name="Start_Button" type="TextureButton" parent="."]
-anchor_left = 0.5
+anchor_left = 1.0
 anchor_top = 1.0
-anchor_right = 0.5
+anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -132.0
-margin_top = -200.0
-margin_right = -3.99994
-margin_bottom = -152.0
-rect_scale = Vector2( 2, 2 )
-texture_normal = ExtResource( 2 )
+margin_left = -566.679
+margin_top = -231.421
+margin_right = -10.6787
+margin_bottom = -77.4207
+texture_normal = ExtResource( 13 )
 texture_pressed = ExtResource( 2 )
 texture_hover = ExtResource( 3 )
 __meta__ = {
