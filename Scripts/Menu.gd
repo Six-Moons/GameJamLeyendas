@@ -14,3 +14,7 @@ func _on_HSlider_value_changed(value):
 
 func _on_TextureButton_pressed():
 	$TextureButton/AudioStreamPlayer.play()
+
+
+func _on_Button_pressed():
+	$TextureButton/AudioStreamPlayer.play()
