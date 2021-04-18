@@ -2,7 +2,7 @@
 
 [ext_resource path="res://Scenes/ArrowButton.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scenes/Conductor.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Scripts/Baile.gd" type="Script" id=3]
+[ext_resource path="res://Scripts/Baile_1.gd" type="Script" id=3]
 [ext_resource path="res://Fonts/heartbit2x.tres" type="DynamicFont" id=4]
 [ext_resource path="res://Sounds/song.ogg" type="AudioStream" id=5]
 [ext_resource path="res://Sprites/game/road/road.png" type="Texture" id=6]

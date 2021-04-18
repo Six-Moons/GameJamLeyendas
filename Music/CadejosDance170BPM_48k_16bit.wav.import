@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/CadejosDance170BPM_48k_16bit.wav-55ec6ea3ec54eb1a775fc6fe48ba4d93.sample"
+
+[deps]
+
+source_file="res://Music/CadejosDance170BPM_48k_16bit.wav"
+dest_files=[ "res://.import/CadejosDance170BPM_48k_16bit.wav-55ec6ea3ec54eb1a775fc6fe48ba4d93.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
