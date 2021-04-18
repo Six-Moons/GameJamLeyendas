@@ -166,44 +166,37 @@ func reset_combo():
 	combo = 0
 	$Combo.text = ""
 
+func cambiar_color(delta, primero, segundo, siguiente_letra):
+	var lim_sup = 0.8
+	var lim_inf = 0.2
+	if primero < lim_sup:
+		primero += 1 * delta;
+		if primero >= lim_sup:
+			primero = lim_sup
+	else:
+		segundo -= 1 * delta;
+		if segundo <= lim_inf:
+			segundo = lim_inf
+			letra = siguiente_letra
+	return [primero, segundo]
+
 func actualizar_colores(delta):
+	var arr
 	if letra == "r":
-		if g < 1:
-			g += 1 * delta;
-			if g >= 1:
-				g = 1
-		else:
-			print(r)
-			r -= 1 * delta;
-			if (r <= 0):
-				r = 0
-				letra = "g"
+		arr = cambiar_color(delta, r, g, "g")
+		r = arr[0]
+		g = arr[1]
 	elif letra == "g":
-		if b < 1:
-			b += 1 * delta;
-			if b >= 1:
-				b = 1
-		else:
-			g -= 1 * delta;
-			if (g <= 0):
-				g = 0
-				letra = "b"
+		arr = cambiar_color(delta, g, b, "b")
+		g = arr[0]
+		b = arr[1]
 	elif letra == "b":
-		if r < 1:
-			r += 1 * delta;
-			if r >= 1:
-				r = 1
-		else:
-			b -= 1 * delta;
-			if (b <= 0):
-				b = 0
-				letra = "r"
+		arr = cambiar_color(delta, b, r, "r")
+		b = arr[0]
+		r = arr[1]
 	pass
 
 func _process(delta):
-#	$Fondo/ColorRect
-	$Fondo/ColorRect.color = Color(r, g, b, 0.3)
+	$Fondo/ColorRect.color = Color(r, g, b, 0.1)
 	
 	actualizar_colores(delta)
-#	print(str(r) + " " + str(g) + " " + str(b))
-	pass
