@@ -26,14 +26,14 @@ __meta__ = {
 }
 
 [node name="Regresar" type="Button" parent="."]
-anchor_left = 1.0
+anchor_left = 0.5
 anchor_top = 1.0
-anchor_right = 1.0
+anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -263.548
-margin_top = -117.014
-margin_right = -67.5476
-margin_bottom = -59.0137
+margin_left = -300.0
+margin_top = -140.0
+margin_right = -104.0
+margin_bottom = -81.9997
 custom_fonts/font = ExtResource( 5 )
 text = "Regresar"
 __meta__ = {
@@ -41,12 +41,14 @@ __meta__ = {
 }
 
 [node name="Seguir" type="Button" parent="."]
+anchor_left = 0.5
 anchor_top = 1.0
+anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = 105.833
-margin_top = -115.754
-margin_right = 309.833
-margin_bottom = -57.7539
+margin_left = 140.0
+margin_top = -140.0
+margin_right = 344.0
+margin_bottom = -81.9999
 custom_fonts/font = ExtResource( 5 )
 text = "Siguiente"
 __meta__ = {
