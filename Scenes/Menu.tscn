@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Scripts/Menu.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/ui/play_button/play1.png" type="Texture" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://Sprites/ui/test_button/test_button1.png" type="Texture" id=9]
 [ext_resource path="res://Sprites/ui/test_button/test_button2.png" type="Texture" id=10]
 [ext_resource path="res://Sounds/bell_ding.ogg" type="AudioStream" id=11]
+[ext_resource path="res://assets/PantallaInicio.png" type="Texture" id=12]
 
 [sub_resource type="StyleBoxTexture" id=1]
 texture = ExtResource( 5 )
@@ -28,6 +29,30 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1920.0
+margin_bottom = 1080.0
+texture = ExtResource( 12 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Button" type="Button" parent="."]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -322.091
+margin_top = 139.589
+margin_right = -10.0908
+margin_bottom = 197.589
+custom_fonts/font = ExtResource( 4 )
+text = "Probar Sonido"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Button"]
+stream = ExtResource( 11 )
 
 [node name="Start_Button" type="TextureButton" parent="."]
 anchor_left = 0.5
@@ -100,6 +125,7 @@ __meta__ = {
 }
 
 [node name="TextureButton" type="TextureButton" parent="."]
+visible = false
 anchor_left = 1.0
 anchor_right = 1.0
 margin_left = -119.398
@@ -116,6 +142,7 @@ __meta__ = {
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="TextureButton"]
 stream = ExtResource( 11 )
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
 [connection signal="button_down" from="Start_Button" to="." method="_on_Start_Button_button_down"]
 [connection signal="value_changed" from="HSlider" to="." method="_on_HSlider_value_changed"]
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]
