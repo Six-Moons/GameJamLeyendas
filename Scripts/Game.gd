@@ -24,8 +24,6 @@ var spawn_4_beat = 0
 var lane = 0
 var rand = 0
 var note = load("res://Scenes/Note.tscn")
-var instance
-
 
 func _ready():
 	randomize()
@@ -118,6 +116,7 @@ func _on_Conductor_beat(position):
 
 
 func _spawn_notes(to_spawn):
+	var instance	
 	if to_spawn > 0:
 		lane = randi() % 3
 		instance = note.instance()

@@ -3,7 +3,7 @@ extends Node2D
 func _on_Start_Button_button_down():
 	AudioServer.set_bus_volume_db(AudioServer.get_bus_index("Master"), 
 								linear2db($HSlider.value))
-	if get_tree().change_scene("res://Scenes/Game.tscn") != OK:
+	if get_tree().change_scene("res://Niveles/Encuentro.tscn") != OK:
 		print ("Error changing scene to Game")
 
 
