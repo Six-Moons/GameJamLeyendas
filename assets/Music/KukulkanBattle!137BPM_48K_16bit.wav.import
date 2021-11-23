@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/KukulkanBattle!137BPM_48K_16bit.wav-5e83c0272ad0e565449bca49b048199d.sample"
+
+[deps]
+
+source_file="res://assets/Music/KukulkanBattle!137BPM_48K_16bit.wav"
+dest_files=[ "res://.import/KukulkanBattle!137BPM_48K_16bit.wav-5e83c0272ad0e565449bca49b048199d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
