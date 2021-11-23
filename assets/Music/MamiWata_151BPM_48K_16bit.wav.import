@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/MamiWata_151BPM_48K_16bit.wav-e3189593b20d5860d91abc1a5d30c26d.sample"
+
+[deps]
+
+source_file="res://assets/Music/MamiWata_151BPM_48K_16bit.wav"
+dest_files=[ "res://.import/MamiWata_151BPM_48K_16bit.wav-e3189593b20d5860d91abc1a5d30c26d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

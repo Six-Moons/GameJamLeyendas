@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Fiesta1_48k_16bit.wav-c00d5e9f3ee8bc21210d5ba7cf8c8e82.sample"
+
+[deps]
+
+source_file="res://assets/Music/Fiesta1_48k_16bit.wav"
+dest_files=[ "res://.import/Fiesta1_48k_16bit.wav-c00d5e9f3ee8bc21210d5ba7cf8c8e82.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0
