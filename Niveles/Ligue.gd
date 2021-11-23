@@ -13,21 +13,21 @@ func _ready():
 	var mami = Dialogic.get_variable("PuntosMami")
 	var gui = Dialogic.get_variable("PuntosGui")
 	
-	if quetz == 10:
+	if quetz == '10':
 		Dialogic.set_variable("Ligue", "Quetz")
-	elif codejos == 10:
+	elif codejos == '10':
 		Dialogic.set_variable("Ligue", "Cadejos")
-	elif mami == 10:
+	elif mami == '10':
 		Dialogic.set_variable("Ligue", "Mami")
-	elif gui == 10:
+	elif gui == '10':
 		Dialogic.set_variable("Ligue", "Gui")
-	elif quetz == 5:
+	elif quetz == '5':
 		Dialogic.set_variable("Ligue", "Quetz")
-	elif codejos == 5:
+	elif codejos == '5':
 		Dialogic.set_variable("Ligue", "Cadejos")
-	elif mami == 5:
+	elif mami == '5':
 		Dialogic.set_variable("Ligue", "Mami")
-	elif gui == 5:
+	elif gui == '5':
 		Dialogic.set_variable("Ligue", "Gui")
 	
 	var dialogo = Dialogic.start("ligue")
