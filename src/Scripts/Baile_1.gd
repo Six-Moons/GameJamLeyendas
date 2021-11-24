@@ -1,5 +1,9 @@
 extends Control
 
+export(String, FILE) var menu_path: = ""
+export(String, FILE) var end_path: = ""
+export(String, FILE) var note_path: = ""
+
 var score = 0
 var combo = 0
 
@@ -23,7 +27,7 @@ var spawn_4_beat = 0
 
 var lane = 0
 var rand = 0
-var note = load("res://Scenes/Note.tscn")
+var note = load(note_path)
 var r = 1
 var g = 0
 var b = 0
@@ -36,7 +40,7 @@ func _ready():
 
 func _input(event):
 	if event.is_action("escape"):
-		if get_tree().change_scene("res://Scenes/Menu.tscn") != OK:
+		if get_tree().change_scene(menu_path) != OK:
 			print ("Error changing scene to Menu")
 
 
@@ -110,7 +114,7 @@ func _on_Conductor_beat(position):
 		Global.okay = okay
 		Global.missed = missed
 		Global.current_song = 1
-		if get_tree().change_scene("res://Scenes/End.tscn") != OK:
+		if get_tree().change_scene(end_path) != OK:
 			print ("Error changing scene to End")
 
 

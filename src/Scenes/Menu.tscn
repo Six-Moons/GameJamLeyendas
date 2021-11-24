@@ -28,6 +28,7 @@ script = ExtResource( 1 )
 __meta__ = {
 "_edit_use_anchors_": false
 }
+next_scene_path = "res://src/Niveles/Encuentro.tscn"
 
 [node name="TextureRect" type="TextureRect" parent="."]
 margin_right = 2563.0
@@ -52,7 +53,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="Button"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Button"]
 stream = ExtResource( 5 )
 
 [node name="Start_Button" type="TextureButton" parent="."]
