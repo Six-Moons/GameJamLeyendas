@@ -29,7 +29,7 @@ var spawn_4_beat = 0
 
 var lane = 0
 var rand = 0
-var note = load(note_path)
+onready var note = load(note_path)
 var r = 1
 var g = 0
 var b = 0
@@ -39,12 +39,10 @@ func _ready():
 	randomize()
 	$Conductor.play_with_beat_offset(offset)
 
-
 func _input(event):
 	if event.is_action("escape"):
 		if get_tree().change_scene(menu_path) != OK:
 			print ("Error changing scene to Menu")
-
 
 func _on_Conductor_measure(position):
 	if position == 1:

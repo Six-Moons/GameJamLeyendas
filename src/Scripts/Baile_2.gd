@@ -27,7 +27,7 @@ var spawn_4_beat = 0
 
 var lane = 0
 var rand = 0
-var note = load(note_path)
+onready var note = load(note_path)
 var r = 1
 var g = 0
 var b = 0
@@ -36,7 +36,6 @@ var letra = "r"
 func _ready():
 	randomize()
 	$Conductor.play_with_beat_offset(5)
-
 
 func _input(event):
 	if event.is_action("escape"):
@@ -147,8 +146,6 @@ func _on_Conductor_beat(position):
 		if get_tree().change_scene(end_path) != OK:
 			print ("Error changing scene to End")
 
-
-
 func _spawn_notes(to_spawn):
 	var instance	
 	if to_spawn > 0:
@@ -164,7 +161,6 @@ func _spawn_notes(to_spawn):
 		instance.initialize(lane)
 		add_child(instance)
 		
-
 
 func increment_score(by):
 	if by > 0:

@@ -4,7 +4,6 @@
 [ext_resource path="res://assets/Music/CadejosDance170BPM_48k_16bit.wav" type="AudioStream" id=2]
 [ext_resource path="res://src/Scripts/Baile_3.gd" type="Script" id=3]
 
-
 [node name="Ritmo" instance=ExtResource( 1 )]
 script = ExtResource( 3 )
 

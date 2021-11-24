@@ -27,7 +27,7 @@ var spawn_4_beat = 0
 
 var lane = 0
 var rand = 0
-var note = load(note_path)
+onready var note = load(note_path)
 var r = 1
 var g = 0
 var b = 0
