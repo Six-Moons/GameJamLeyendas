@@ -1,8 +1,15 @@
 extends Baile
 
 func _ready():
+	spawn_1_beat = 0
+	spawn_2_beat = 0
+	spawn_3_beat = 1
+	spawn_4_beat = 0
+	bpm = 151
+	offset = 5
+	sec_per_beat = 60.0 / bpm
 	randomize()
-	$Conductor.play_with_beat_offset(5)
+	$Conductor.play_with_beat_offset(offset)
 
 func _on_Conductor_measure(position):
 	if position == 1:

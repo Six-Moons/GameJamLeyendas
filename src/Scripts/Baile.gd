@@ -15,17 +15,17 @@ var good = 0
 var okay = 0
 var missed = 0
 
-var bpm = 137
+var bpm
 
 var song_position = 0.0
 var song_position_in_beats = 0
 var last_spawned_beat = 0
-var sec_per_beat = 60.0 / bpm
+var sec_per_beat
 
-var spawn_1_beat = 1
-var spawn_2_beat = 0
-var spawn_3_beat = 0
-var spawn_4_beat = 0
+var spawn_1_beat
+var spawn_2_beat
+var spawn_3_beat
+var spawn_4_beat
 
 var lane = 0
 var rand = 0
@@ -53,7 +53,7 @@ func end_song(score, num_arrows, curr_song) -> void:
 	pass
 
 func _spawn_notes(to_spawn):
-	var instance	
+	var instance
 	if to_spawn > 0:
 		lane = randi() % 3
 		instance = note.instance()
