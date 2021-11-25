@@ -1,10 +1,6 @@
 extends Baile
 
 func _ready():
-	spawn_1_beat = 0
-	spawn_2_beat = 0
-	spawn_3_beat = 1
-	spawn_4_beat = 0
 	bpm = 196
 	offset = 8
 	sec_per_beat = 60.0 / bpm
@@ -23,35 +19,40 @@ func _on_Conductor_measure(position):
 
 func _on_Conductor_beat(position):
 	song_position_in_beats = position
-	if song_position_in_beats > 36 + offset:
+	if song_position_in_beats >= 256 + offset:
+		end_song(score, 244, 4)
+	elif song_position_in_beats > 252 + offset:
+		spawn_1_beat = 0
+		spawn_2_beat = 0
+		spawn_3_beat = 0
+		spawn_4_beat = 0
+	elif song_position_in_beats > 194 + offset:
+		spawn_1_beat = 2
+		spawn_2_beat = 2
+		spawn_3_beat = 1
+		spawn_4_beat = 2
+	elif song_position_in_beats > 162 + offset:
+		spawn_1_beat = 2
+		spawn_2_beat = 2
+		spawn_3_beat = 1
+		spawn_4_beat = 1
+	elif song_position_in_beats > 132 + offset:
+		spawn_1_beat = 0
+		spawn_2_beat = 2
+		spawn_3_beat = 0
+		spawn_4_beat = 2
+	elif song_position_in_beats > 98 + offset:
+		spawn_1_beat = 2
+		spawn_2_beat = 0
+		spawn_3_beat = 1
+		spawn_4_beat = 0
+	elif song_position_in_beats > 36 + offset:
 		spawn_1_beat = 1
 		spawn_2_beat = 1
 		spawn_3_beat = 1
 		spawn_4_beat = 1
-	if song_position_in_beats > 98 + offset:
-		spawn_1_beat = 2
+	else:
+		spawn_1_beat = 0
 		spawn_2_beat = 0
 		spawn_3_beat = 1
 		spawn_4_beat = 0
-	if song_position_in_beats > 132 + offset:
-		spawn_1_beat = 0
-		spawn_2_beat = 2
-		spawn_3_beat = 0
-		spawn_4_beat = 2
-	if song_position_in_beats > 162 + offset:
-		spawn_1_beat = 2
-		spawn_2_beat = 2
-		spawn_3_beat = 1
-		spawn_4_beat = 1
-	if song_position_in_beats > 194 + offset:
-		spawn_1_beat = 2
-		spawn_2_beat = 2
-		spawn_3_beat = 1
-		spawn_4_beat = 2
-	if song_position_in_beats > 252 + offset:
-		spawn_1_beat = 0
-		spawn_2_beat = 0
-		spawn_3_beat = 0
-		spawn_4_beat = 0
-	if song_position_in_beats >= 256 + offset:
-		end_song(score, 244, 4)
