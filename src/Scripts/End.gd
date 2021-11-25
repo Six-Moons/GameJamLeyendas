@@ -18,16 +18,16 @@ func _ready():
 func _on_Seguir_pressed():
 	if Global.current_song == 1:
 		if get_tree().change_scene(des_baile1) != OK:
-			print ("Error changing scene to Game")
+			print ("Error changing scene to Baile 1")
 	elif Global.current_song == 2:
 		if get_tree().change_scene(des_baile2) != OK:
-			print ("Error changing scene to Game")
+			print ("Error changing scene to Baile 2")
 	elif Global.current_song == 3:
 		if get_tree().change_scene(des_baile3) != OK:
-			print ("Error changing scene to Game")
+			print ("Error changing scene to Baile 3")
 	elif Global.current_song == 4:
 		if get_tree().change_scene(final_path) != OK:
-			print ("Error changing scene to Game")
+			print ("Error changing scene to Final")
 
 func _on_Regresar_pressed():
 	if get_tree().change_scene(menu_path) != OK:

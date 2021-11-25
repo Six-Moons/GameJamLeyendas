@@ -86,8 +86,8 @@ func _on_Conductor_beat(position):
 		spawn_2_beat = 0
 		spawn_3_beat = 0
 		spawn_4_beat = 0
-	if song_position_in_beats > 256 + offset:
-		Global.set_score(score,244)
+	if song_position_in_beats >= 256 + offset:
+		Global.set_score(score, 244)
 		Global.combo = max_combo
 		Global.great = great
 		Global.good = good
@@ -96,8 +96,6 @@ func _on_Conductor_beat(position):
 		Global.current_song = 4
 		if get_tree().change_scene(end_path) != OK:
 			print ("Error changing scene to End")
-
-
 
 func _spawn_notes(to_spawn):
 	var instance	
