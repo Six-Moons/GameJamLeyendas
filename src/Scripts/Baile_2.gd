@@ -9,14 +9,7 @@ func _ready():
 	$Conductor.play_with_beat_offset(offset)
 
 func _on_Conductor_measure(position):
-	if position == 1:
-		_spawn_notes(spawn_1_beat)
-	elif position == 2:
-		_spawn_notes(spawn_2_beat)
-	elif position == 3:
-		_spawn_notes(spawn_3_beat)
-	elif position == 4:
-		_spawn_notes(spawn_4_beat)
+	spawn_notes_on_position(position)
 
 func _on_Conductor_beat(position):
 	song_position_in_beats = position

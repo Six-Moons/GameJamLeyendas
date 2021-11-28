@@ -52,6 +52,17 @@ func end_song(score, num_arrows, curr_song) -> void:
 	Global.change_scene(end_path)
 	pass
 
+func spawn_notes_on_position(position):
+	if position == 1:
+		_spawn_notes(spawn_1_beat)
+	elif position == 2:
+		_spawn_notes(spawn_2_beat)
+	elif position == 3:
+		_spawn_notes(spawn_3_beat)
+	elif position == 4:
+		_spawn_notes(spawn_4_beat)
+	pass
+
 func _spawn_notes(to_spawn):
 	var instance
 	if to_spawn > 0:
