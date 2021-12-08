@@ -5,13 +5,10 @@
 [ext_resource path="res://assets/Fonts/heartbit2x.tres" type="DynamicFont" id=3]
 [ext_resource path="res://src/Scripts/Note.gd" type="Script" id=4]
 
-
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 8.11129, 8.75212 )
 
-[node name="Note" type="Area2D" groups=[
-"note",
-]]
+[node name="Note" type="Area2D" groups=["note"]]
 script = ExtResource( 4 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
@@ -48,11 +45,12 @@ margin_left = -61.0
 margin_top = -8.0
 margin_right = 71.0
 margin_bottom = 44.0
-custom_fonts/font = ExtResource( 3 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = ExtResource( 3 )
 align = 1
 valign = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

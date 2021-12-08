@@ -10,6 +10,11 @@ var missed = 0
 var grade = "NA"
 var current_song = 1
 
+func change_scene(path) -> void:
+	if get_tree().change_scene(path) != OK:
+		print ("Error changing scene to End")
+	pass
+
 func punt(char_score):
 	if Global.current_song == 1:
 		Dialogic.set_variable("PuntosQuetz", char_score)

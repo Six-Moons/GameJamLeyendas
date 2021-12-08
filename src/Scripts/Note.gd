@@ -11,11 +11,6 @@ const RIGHT_LANE_SPAWN = Vector2(800, SPAWN_Y)
 var speed = 0
 var hit = false
 
-
-func _ready():
-	pass
-
-
 func _physics_process(delta):
 	if !hit:
 		position.y += speed * delta
@@ -24,7 +19,6 @@ func _physics_process(delta):
 			get_parent().reset_combo()
 	else:
 		$Node2D.position.y -= speed * delta
-
 
 func initialize(lane):
 	if lane == 0:
@@ -42,7 +36,6 @@ func initialize(lane):
 	
 	speed = DIST_TO_TARGET #/ 2.0
 
-
 func destroy(score):
 	$CPUParticles2D.emitting = true
 	$AnimatedSprite.visible = false
@@ -57,7 +50,6 @@ func destroy(score):
 	elif score == 1:
 		$Node2D/Label.text = "OKAY"
 		$Node2D/Label.modulate = Color("997577")
-
 
 func _on_Timer_timeout():
 	queue_free()
