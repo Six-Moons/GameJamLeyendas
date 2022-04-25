@@ -3,7 +3,6 @@
 [ext_resource path="res://src/Frames/arrow_up_frames.tres" type="SpriteFrames" id=1]
 [ext_resource path="res://src/Scripts/ArrowButton.gd" type="Script" id=2]
 
-
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 13.4518, 6.16838 )
 
@@ -38,6 +37,7 @@ shape = SubResource( 3 )
 [node name="PushTimer" type="Timer" parent="."]
 wait_time = 0.05
 one_shot = true
+
 [connection signal="area_entered" from="PerfectArea" to="." method="_on_PerfectArea_area_entered"]
 [connection signal="area_exited" from="PerfectArea" to="." method="_on_PerfectArea_area_exited"]
 [connection signal="area_entered" from="GoodArea" to="." method="_on_GoodArea_area_entered"]

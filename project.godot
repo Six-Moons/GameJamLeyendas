@@ -9,6 +9,11 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Control",
+"class": "Baile",
+"language": "GDScript",
+"path": "res://src/Scripts/Baile.gd"
+}, {
 "base": "Reference",
 "class": "DTS",
 "language": "GDScript",
@@ -40,6 +45,7 @@ _global_script_classes=[ {
 "path": "res://addons/dialogic/Other/DialogicUtil.gd"
 } ]
 _global_script_class_icons={
+"Baile": "",
 "DTS": "",
 "Dialogic": "",
 "DialogicBackgroundMusic": "",
