@@ -77,7 +77,6 @@ func _spawn_notes(to_spawn):
 		instance = note.instance()
 		instance.initialize(lane)
 		add_child(instance)
-		
 
 func increment_score(by):
 	if by > 0:
