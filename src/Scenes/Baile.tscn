@@ -21,9 +21,6 @@ note_path = "res://src/Scenes/Note.tscn"
 [node name="Fondo" type="Control" parent="."]
 anchor_right = 1.0
 anchor_bottom = 1.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="TextureRect" type="TextureRect" parent="Fondo"]
 anchor_right = 1.0
@@ -46,32 +43,27 @@ __meta__ = {
 anchor_left = 0.5
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -231.859
-margin_top = -1.25995
-margin_right = 242.141
-margin_bottom = -1.25995
+margin_left = -240.0
+margin_right = 240.0
 color = Color( 1, 1, 1, 0.227451 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="road" type="Sprite" parent="."]
-position = Vector2( 278, 0 )
+position = Vector2( 400, 0 )
 scale = Vector2( 4, 4 )
 texture = ExtResource( 6 )
 centered = false
 
 [node name="ArrowUp" parent="." instance=ExtResource( 1 )]
-position = Vector2( 525, 540 )
+position = Vector2( 640, 656 )
 input = "up"
 
 [node name="ArrowLeft" parent="." instance=ExtResource( 1 )]
-position = Vector2( 360, 540 )
+position = Vector2( 480, 656 )
 frames = ExtResource( 7 )
 input = "left"
 
-[node name="ArrowButton" parent="." instance=ExtResource( 1 )]
-position = Vector2( 680, 540 )
+[node name="ArrowRight" parent="." instance=ExtResource( 1 )]
+position = Vector2( 800, 656 )
 frames = ExtResource( 8 )
 input = "right"
 
@@ -102,7 +94,6 @@ __meta__ = {
 [node name="Conductor" parent="." instance=ExtResource( 2 )]
 stream = ExtResource( 5 )
 volume_db = -15.0
-bpm = 115
 
 [connection signal="beat" from="Conductor" to="." method="_on_Conductor_beat"]
 [connection signal="measure" from="Conductor" to="." method="_on_Conductor_measure"]
