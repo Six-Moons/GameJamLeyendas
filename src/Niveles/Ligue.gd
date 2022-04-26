@@ -2,7 +2,7 @@ extends Control
 
 func _ready():
 	var quetz = Dialogic.get_variable("PuntosQuetz")
-	var codejos = Dialogic.get_variable("PuntosCodejos")
+	var codejos = Dialogic.get_variable("PuntosCadejos")
 	var mami = Dialogic.get_variable("PuntosMami")
 	var gui = Dialogic.get_variable("PuntosGui")
 

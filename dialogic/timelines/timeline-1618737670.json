@@ -1,1 +1,110 @@
-{"events":[{"action":"join","character":"character-1618728578.json","portrait":"","position":{"0":false,"1":false,"2":true,"3":false,"4":false}},{"condition":">=","definition":"1618760347-364","value":"10"},{"character":"character-1618728578.json","portrait":"QuetzalcoatlYay","text":"¡Eso es, ganaste! ¿Qué tal si tú y yo bailamos un poco más, eh?"},{"endbranch":""},{"condition":">=","definition":"1618760347-364","value":"5"},{"character":"character-1618728578.json","portrait":"Default","text":"Oh…. eso fue inesperado. ¿Te divertiste?"},{"endbranch":""},{"condition":"<","definition":"1618760347-364","value":"5"},{"character":"character-1618728578.json","portrait":"QuetzalcoatlNay","text":"Sabiendo que así bailarías, mejor no hubiera propuesto nada… Lo siento."},{"endbranch":""},{"action":"leaveall","character":"character-1618728578.json"},{"action":"join","character":"character-1618728557.json","portrait":"mamiwataYay","position":{"0":false,"1":false,"2":true,"3":false,"4":false}},{"character":"character-1618728557.json","portrait":"mamiwataYay","text":"Oyee, ¡ahora es mi turno de bailar contigo! Acércate, nene, que no muerdo."},{"change_scene":"res://src/Niveles/Bailes/Baile_2.tscn"}],"metadata":{"dialogic-version":"1.0","file":"timeline-1618737670.json","name":"Despues1baile"}}
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0.5,
+			"character": "character-1618728578.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"condition": "==",
+			"definition": "1618760347-364",
+			"event_id": "dialogic_012",
+			"value": "10"
+		},
+		{
+			"character": "character-1618728578.json",
+			"event_id": "dialogic_001",
+			"portrait": "QuetzalcoatlYay",
+			"text": "¡Eso es, ganaste! ¿Qué tal si tú y yo bailamos un poco más, eh?"
+		},
+		{
+			"endbranch": "",
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "==",
+			"definition": "1618760347-364",
+			"event_id": "dialogic_012",
+			"value": "5"
+		},
+		{
+			"character": "character-1618728578.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Oh…. eso fue inesperado. ¿Te divertiste?"
+		},
+		{
+			"endbranch": "",
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "==",
+			"definition": "1618760347-364",
+			"event_id": "dialogic_012",
+			"value": "0"
+		},
+		{
+			"character": "character-1618728578.json",
+			"event_id": "dialogic_001",
+			"portrait": "QuetzalcoatlNay",
+			"text": "Sabiendo que así bailarías, mejor no hubiera propuesto nada… Lo siento."
+		},
+		{
+			"endbranch": "",
+			"event_id": "dialogic_013"
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0.5,
+			"character": "character-1618728578.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0.5,
+			"character": "character-1618728557.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "mamiwataYay",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1618728557.json",
+			"event_id": "dialogic_001",
+			"portrait": "mamiwataYay",
+			"text": "Oyee, ¡ahora es mi turno de bailar contigo! Acércate, nene, que no muerdo."
+		},
+		{
+			"change_scene": "res://src/Niveles/Bailes/Baile_2.tscn",
+			"event_id": "dialogic_041"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.1",
+		"file": "timeline-1618737670.json",
+		"name": "Despues1baile"
+	}
+}
