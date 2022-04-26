@@ -13,7 +13,7 @@ func _on_Conductor_measure(position):
 func _on_Conductor_beat(position):
 	song_position_in_beats = position
 	if song_position_in_beats >= 208:
-		end_song(10, 224, 1)
+		end_song(score, 224)
 	elif song_position_in_beats > 201:
 		spawn_1_beat = 0
 		spawn_2_beat = 0
