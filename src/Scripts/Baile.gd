@@ -44,13 +44,13 @@ func _input(event):
 		Global.change_scene(menu_path)
 
 func end_song(song_score, num_arrows) -> void:
+	Global.current_song = current_song
 	Global.set_score(song_score, num_arrows)
 	Global.combo = max_combo
 	Global.great = great
 	Global.good = good
 	Global.okay = okay
 	Global.missed = missed
-	Global.current_song = current_song
 	Global.change_scene(end_path)
 	pass
 
