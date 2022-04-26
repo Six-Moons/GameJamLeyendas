@@ -43,8 +43,8 @@ func _input(event):
 	if event.is_action("escape"):
 		Global.change_scene(menu_path)
 
-func end_song(score, num_arrows) -> void:
-	Global.set_score(score, num_arrows)
+func end_song(song_score, num_arrows) -> void:
+	Global.set_score(song_score, num_arrows)
 	Global.combo = max_combo
 	Global.great = great
 	Global.good = good
@@ -142,7 +142,7 @@ func _process(delta):
 	$Fondo/ColorRect.color = Color(r, g, b, 0.1)
 	
 	if Input.is_action_pressed("skip"):
-		end_song(90, 100)
+		end_song(90, 1)
 		pass
 	
 	actualizar_colores(delta)
