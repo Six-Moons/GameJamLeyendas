@@ -1,1 +1,13 @@
-{"events":[{"change_scene":"res://src/Niveles/Final Temprano.tscn"}],"metadata":{"dialogic-version":"1.0","file":"timeline-1618764308.json","name":"ligue"}}
+{
+	"events": [
+		{
+			"change_scene": "res://src/Niveles/Final Temprano.tscn",
+			"event_id": "dialogic_041"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.0",
+		"file": "timeline-1618764308.json",
+		"name": "ligue"
+	}
+}

@@ -1,1 +1,87 @@
-{"events":[{"action":"join","character":"character-1618739151.json","portrait":"","position":{"0":false,"1":false,"2":true,"3":false,"4":false}},{"condition":">=","definition":"1618760521-267","value":"10"},{"character":"character-1618739151.json","portrait":"GuiriviloYay","text":"Que te parece si seguimos bailando en mi casa wape ddaaaaah :p"},{"endbranch":""},{"condition":">=","definition":"1618760521-267","value":"5"},{"character":"character-1618739151.json","portrait":"Default","text":"Pues como que maso, ahí si quieres luego te enseño unos pasos en privado ;^))))))))))))))))))))))))))))) ;o) ;-) :p ;D ;>"},{"endbranch":""},{"condition":"<","definition":"1618760521-267","value":"5"},{"character":"character-1618739151.json","portrait":"GuiriviloNay","text":"…"},{"endbranch":""},{"action":"leaveall","character":"[All]"},{"change_scene":"res://src/Niveles/Ligue.tscn"}],"metadata":{"dialogic-version":"1.0","file":"timeline-1618739098.json","name":"Despues4baile"}}
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0.5,
+			"character": "character-1618739151.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"condition": ">=",
+			"definition": "1618760521-267",
+			"event_id": "dialogic_012",
+			"value": "10"
+		},
+		{
+			"character": "character-1618739151.json",
+			"event_id": "dialogic_001",
+			"portrait": "GuiriviloYay",
+			"text": "Que te parece si seguimos bailando en mi casa wape ddaaaaah :p"
+		},
+		{
+			"endbranch": "",
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": ">=",
+			"definition": "1618760521-267",
+			"event_id": "dialogic_012",
+			"value": "5"
+		},
+		{
+			"character": "character-1618739151.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Pues como que maso, ahí si quieres luego te enseño unos pasos en privado ;^))))))))))))))))))))))))))))) ;o) ;-) :p ;D ;>"
+		},
+		{
+			"endbranch": "",
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "<",
+			"definition": "1618760521-267",
+			"event_id": "dialogic_012",
+			"value": "5"
+		},
+		{
+			"character": "character-1618739151.json",
+			"event_id": "dialogic_001",
+			"portrait": "GuiriviloNay",
+			"text": "…"
+		},
+		{
+			"endbranch": "",
+			"event_id": "dialogic_013"
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0.5,
+			"character": "[All]",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"change_scene": "res://src/Niveles/Ligue.tscn",
+			"event_id": "dialogic_041"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.0",
+		"file": "timeline-1618739098.json",
+		"name": "Despues4baile"
+	}
+}

@@ -1,1 +1,145 @@
-{"events":[{"action":"join","character":"character-1618709165.json","portrait":"","position":{"0":false,"1":true,"2":false,"3":false,"4":false}},{"action":"join","character":"character-1618709187.json","portrait":"","position":{"0":false,"1":false,"2":false,"3":true,"4":false}},{"condition":">=","definition":"1618760499-731","value":"10"},{"character":"character-1618709165.json","portrait":"cadejaYay","text":"¡Jajajajajaj! ¡No manches! ¡De los mejores bailes que he tenido! Sí que sabes mover el bote, eh."},{"character":"character-1618709187.json","portrait":"cadejoYay","text":"Pues me equivoqué. Ten suerte que saldrás vivx esta vez y más vale que disfrutes la fiesta… conmigo…."},{"endbranch":""},{"condition":">=","definition":"1618760499-731","value":"5"},{"character":"character-1618709165.json","portrait":"Default","text":"Minimo no estorbaste."},{"character":"character-1618709187.json","portrait":"Default","text":"¡Eso fue muy divertido, eh! ¡A ver cuando bailamos de nuevo, chiquite!"},{"endbranch":""},{"condition":"<","definition":"1618760499-731","value":"5"},{"character":"character-1618709187.json","portrait":"cadejoNay","text":" Uhm, ¿bailaste... bonito?"},{"character":"character-1618709165.json","portrait":"cadejaNay","text":"¿¡Estás ciego!? Estuvo horrible. Sí debimos sacrificarle, ugh."},{"endbranch":""},{"action":"leaveall","character":"[All]"},{"action":"join","character":"character-1618739151.json","portrait":"GuiriviloYay","position":{"0":false,"1":false,"2":true,"3":false,"4":false}},{"character":"character-1618739151.json","portrait":"","text":"Ja ja ja. Sí, sí, muy chido y todo, pero apuesto a que nunca te ha sacado a bailar un espécimen ejemplar como yo. ¡Aprovecha, eh! "},{"change_scene":"res://src/Niveles/Bailes/Baile_4.tscn"}],"metadata":{"dialogic-version":"1.0","file":"timeline-1618738798.json","name":"Despues3baile"}}
+{
+	"events": [
+		{
+			"animation": "[Default]",
+			"animation_length": 0.5,
+			"character": "character-1618709165.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"position": {
+				"0": false,
+				"1": true,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0.5,
+			"character": "character-1618709187.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": true,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"condition": ">=",
+			"definition": "1618760499-731",
+			"event_id": "dialogic_012",
+			"value": "10"
+		},
+		{
+			"character": "character-1618709165.json",
+			"event_id": "dialogic_001",
+			"portrait": "cadejaYay",
+			"text": "¡Jajajajajaj! ¡No manches! ¡De los mejores bailes que he tenido! Sí que sabes mover el bote, eh."
+		},
+		{
+			"character": "character-1618709187.json",
+			"event_id": "dialogic_001",
+			"portrait": "cadejoYay",
+			"text": "Pues me equivoqué. Ten suerte que saldrás vivx esta vez y más vale que disfrutes la fiesta… conmigo…."
+		},
+		{
+			"endbranch": "",
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": ">=",
+			"definition": "1618760499-731",
+			"event_id": "dialogic_012",
+			"value": "5"
+		},
+		{
+			"character": "character-1618709165.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "Minimo no estorbaste."
+		},
+		{
+			"character": "character-1618709187.json",
+			"event_id": "dialogic_001",
+			"portrait": "Default",
+			"text": "¡Eso fue muy divertido, eh! ¡A ver cuando bailamos de nuevo, chiquite!"
+		},
+		{
+			"endbranch": "",
+			"event_id": "dialogic_013"
+		},
+		{
+			"condition": "<",
+			"definition": "1618760499-731",
+			"event_id": "dialogic_012",
+			"value": "5"
+		},
+		{
+			"character": "character-1618709187.json",
+			"event_id": "dialogic_001",
+			"portrait": "cadejoNay",
+			"text": " Uhm, ¿bailaste... bonito?"
+		},
+		{
+			"character": "character-1618709165.json",
+			"event_id": "dialogic_001",
+			"portrait": "cadejaNay",
+			"text": "¿¡Estás ciego!? Estuvo horrible. Sí debimos sacrificarle, ugh."
+		},
+		{
+			"endbranch": "",
+			"event_id": "dialogic_013"
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0.5,
+			"character": "[All]",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"type": 1,
+			"z_index": 0
+		},
+		{
+			"animation": "[Default]",
+			"animation_length": 0.5,
+			"character": "character-1618739151.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "GuiriviloYay",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": true,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1618739151.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ja ja ja. Sí, sí, muy chido y todo, pero apuesto a que nunca te ha sacado a bailar un espécimen ejemplar como yo. ¡Aprovecha, eh! "
+		},
+		{
+			"change_scene": "res://src/Niveles/Bailes/Baile_4.tscn",
+			"event_id": "dialogic_041"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.0",
+		"file": "timeline-1618738798.json",
+		"name": "Despues3baile"
+	}
+}
