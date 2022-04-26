@@ -1,1 +1,29 @@
-{"color":"#ff53f3ef","default_speaker":false,"description":"","display_name":"Mami","display_name_bool":false,"id":"character-1618728557.json","name":"Mami Wata","offset_x":0,"offset_y":0,"portraits":[{"name":"Default","path":"res://assets/Sprites/personajes/mami/mamiwata.png"},{"name":"mamiwataNay","path":"res://assets/Sprites/personajes/mami/mamiwataNay.png"},{"name":"mamiwataYay","path":"res://assets/Sprites/personajes/mami/mamiwataYay.png"}],"scale":50}
+{
+	"color": "#ff53f3ef",
+	"description": "",
+	"display_name": "Mami",
+	"display_name_bool": false,
+	"id": "character-1618728557.json",
+	"mirror_portraits": false,
+	"name": "Mami Wata",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://assets/Sprites/personajes/mami/mamiwata.png"
+		},
+		{
+			"name": "mamiwataNay",
+			"path": "res://assets/Sprites/personajes/mami/mamiwataNay.png"
+		},
+		{
+			"name": "mamiwataYay",
+			"path": "res://assets/Sprites/personajes/mami/mamiwataYay.png"
+		}
+	],
+	"scale": 50,
+	"theme": ""
+}

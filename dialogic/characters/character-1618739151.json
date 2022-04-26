@@ -1,1 +1,29 @@
-{"color":"#fff29209","default_speaker":false,"description":"","display_name":"","display_name_bool":false,"id":"character-1618739151.json","name":"Guirivilo","offset_x":0,"offset_y":0,"portraits":[{"name":"Default","path":"res://assets/Sprites/personajes/guirivilo/Guirivilo.png"},{"name":"GuiriviloNay","path":"res://assets/Sprites/personajes/guirivilo/GuiriviloNay.png"},{"name":"GuiriviloYay","path":"res://assets/Sprites/personajes/guirivilo/GuiriviloYay.png"}],"scale":50}
+{
+	"color": "#fff29209",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1618739151.json",
+	"mirror_portraits": false,
+	"name": "Guirivilo",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://assets/Sprites/personajes/guirivilo/Guirivilo.png"
+		},
+		{
+			"name": "GuiriviloNay",
+			"path": "res://assets/Sprites/personajes/guirivilo/GuiriviloNay.png"
+		},
+		{
+			"name": "GuiriviloYay",
+			"path": "res://assets/Sprites/personajes/guirivilo/GuiriviloYay.png"
+		}
+	],
+	"scale": 50,
+	"theme": ""
+}
