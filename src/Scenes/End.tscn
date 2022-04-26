@@ -15,7 +15,7 @@ menu_path = "res://src/Scenes/Menu.tscn"
 des_baile1 = "res://src/Niveles/DesBaile1.tscn"
 des_baile2 = "res://src/Niveles/DesBaile2.tscn"
 des_baile3 = "res://src/Niveles/DesBaile3.tscn"
-final_path = "res://src/Niveles/Ligue.tscn"
+final_path = "res://src/Niveles/DesBaile4.tscn"
 
 [node name="TextureRect" type="TextureRect" parent="."]
 anchor_right = 1.0
