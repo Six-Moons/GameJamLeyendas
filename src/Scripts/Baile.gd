@@ -6,6 +6,8 @@ export(String, FILE) var menu_path: = ""
 export(String, FILE) var end_path: = ""
 export(String, FILE) var note_path: = ""
 
+export var current_song = 0 
+
 var score = 0
 var combo = 0
 
@@ -41,14 +43,14 @@ func _input(event):
 	if event.is_action("escape"):
 		Global.change_scene(menu_path)
 
-func end_song(score, num_arrows, curr_song) -> void:
+func end_song(score, num_arrows) -> void:
 	Global.set_score(score, num_arrows)
 	Global.combo = max_combo
 	Global.great = great
 	Global.good = good
 	Global.okay = okay
 	Global.missed = missed
-	Global.current_song = curr_song
+	Global.current_song = current_song
 	Global.change_scene(end_path)
 	pass
 
@@ -138,5 +140,9 @@ func actualizar_colores(delta):
 
 func _process(delta):
 	$Fondo/ColorRect.color = Color(r, g, b, 0.1)
+	
+	if Input.is_action_pressed("skip"):
+		end_song(90, 100)
+		pass
 	
 	actualizar_colores(delta)
