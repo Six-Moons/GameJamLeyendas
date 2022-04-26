@@ -9,7 +9,7 @@
 	"nickname": "",
 	"nickname_bool": false,
 	"offset_x": 0,
-	"offset_y": -15,
+	"offset_y": -220,
 	"portraits": [
 		{
 			"name": "Default",
@@ -24,6 +24,6 @@
 			"path": "res://assets/Sprites/personajes/quetz/QuetzalcoatlYay.png"
 		}
 	],
-	"scale": 65,
+	"scale": 50,
 	"theme": ""
 }
