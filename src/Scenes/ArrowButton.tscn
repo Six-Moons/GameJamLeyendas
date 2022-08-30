@@ -4,13 +4,13 @@
 [ext_resource path="res://src/Scripts/ArrowButton.gd" type="Script" id=2]
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 13.6502, 34.5432 )
+extents = Vector2( 16, 32 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 13.4518, 18.5699 )
+extents = Vector2( 16, 24 )
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 13.4518, 6.16838 )
+extents = Vector2( 16, 12 )
 
 [node name="ArrowButton" type="AnimatedSprite"]
 scale = Vector2( 2, 2 )
@@ -18,16 +18,20 @@ frames = ExtResource( 1 )
 script = ExtResource( 2 )
 
 [node name="OkayArea" type="Area2D" parent="."]
+modulate = Color( 0.101961, 0, 1, 1 )
 collision_layer = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="OkayArea"]
+position = Vector2( 0, -9.53674e-07 )
 shape = SubResource( 3 )
 
 [node name="GoodArea" type="Area2D" parent="."]
+modulate = Color( 1, 0, 0, 1 )
 collision_layer = 0
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="GoodArea"]
+position = Vector2( 4.76837e-07, 0 )
 shape = SubResource( 2 )
 
 [node name="PerfectArea" type="Area2D" parent="."]
@@ -35,6 +39,8 @@ collision_layer = 0
 collision_mask = 4
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PerfectArea"]
+modulate = Color( 0.14902, 1, 0, 1 )
+position = Vector2( 4.76837e-07, -2.38419e-07 )
 shape = SubResource( 1 )
 
 [node name="PushTimer" type="Timer" parent="."]

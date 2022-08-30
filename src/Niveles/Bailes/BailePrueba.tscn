@@ -5,6 +5,3 @@
 
 [node name="Ritmo" instance=ExtResource( 1 )]
 script = ExtResource( 2 )
-
-[node name="Conductor" parent="." index="7"]
-bpm = 196
