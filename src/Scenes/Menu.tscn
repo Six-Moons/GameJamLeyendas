@@ -25,9 +25,6 @@ expand_margin_right = 8.0
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 next_scene_path = "res://src/Niveles/Encuentro.tscn"
 
 [node name="TextureRect" type="TextureRect" parent="."]

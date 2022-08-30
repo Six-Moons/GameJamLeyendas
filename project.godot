@@ -95,6 +95,10 @@ config/icon="res://icon.png"
 DialogicSingleton="*res://addons/dialogic/Other/DialogicSingleton.gd"
 Global="*res://src/Scenes/Global.tscn"
 
+[debug]
+
+shapes/collision/shape_color=Color( 1, 1, 1, 0.419608 )
+
 [display]
 
 window/size/width=1280
