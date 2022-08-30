@@ -6,6 +6,7 @@
 
 [node name="Ritmo" instance=ExtResource( 1 )]
 script = ExtResource( 3 )
+offset = 8
 current_song = 4
 
 [node name="ColorRect2" parent="Fondo" index="2"]

@@ -5,6 +5,7 @@ class_name Baile
 export(String, FILE) var menu_path: = ""
 export(String, FILE) var end_path: = ""
 export(String, FILE) var note_path: = ""
+export(int) var offset
 
 export var current_song = 0 
 
@@ -17,12 +18,9 @@ var good = 0
 var okay = 0
 var missed = 0
 
-var bpm
-
 var song_position = 0.0
 var song_position_in_beats = 0
 var last_spawned_beat = 0
-var sec_per_beat
 
 var spawn_1_beat
 var spawn_2_beat
@@ -37,7 +35,8 @@ var g = 0
 var b = 0
 var letra = "r"
 
-var offset
+func _ready():
+	$Conductor.play_with_beat_offset(offset)
 
 func _input(event):
 	if event.is_action("escape"):
