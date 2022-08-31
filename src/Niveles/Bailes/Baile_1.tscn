@@ -4,6 +4,7 @@
 [ext_resource path="res://assets/Music/KukulkanBattle!137BPM_48K_16bit.wav" type="AudioStream" id=2]
 
 [node name="Ritmo" instance=ExtResource( 1 )]
+offset = 4
 current_song = 1
 
 [node name="ColorRect2" parent="Fondo" index="2"]

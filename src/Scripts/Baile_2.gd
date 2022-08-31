@@ -1,13 +1,5 @@
 extends Baile
 
-func _ready():
-	
-	bpm = 151
-	offset = 5
-	sec_per_beat = 60.0 / bpm
-	randomize()
-	$Conductor.play_with_beat_offset(offset)
-
 func _on_Conductor_measure(position):
 	spawn_notes_on_position(position)
 
@@ -15,7 +7,7 @@ func _on_Conductor_beat(position):
 	song_position_in_beats = position
 	if song_position_in_beats >= 191:
 		end_song(score, 244)
-	elif song_position_in_beats > 186:
+	elif song_position_in_beats >= 186:
 		spawn_1_beat = 0
 		spawn_2_beat = 0
 		spawn_3_beat = 0
