@@ -36,8 +36,8 @@ var b = 0
 var letra = "r"
 
 func _ready():
-#	$Conductor.play_with_beat_offset(offset)
-	$Conductor.play_from_beat(180, offset)
+	$Conductor.play_with_beat_offset(offset)
+#	$Conductor.play_from_beat(180, offset)
 
 func _input(event):
 	if event.is_action("escape"):
