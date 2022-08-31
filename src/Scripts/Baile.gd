@@ -22,10 +22,10 @@ var song_position = 0.0
 var song_position_in_beats = 0
 var last_spawned_beat = 0
 
-var spawn_1_beat
-var spawn_2_beat
-var spawn_3_beat
-var spawn_4_beat
+var spawn_1_beat = 0
+var spawn_2_beat = 0
+var spawn_3_beat = 0
+var spawn_4_beat = 0
 
 var lane = 0
 var rand = 0
@@ -36,7 +36,8 @@ var b = 0
 var letra = "r"
 
 func _ready():
-	$Conductor.play_with_beat_offset(offset)
+#	$Conductor.play_with_beat_offset(offset)
+	$Conductor.play_from_beat(180, offset)
 
 func _input(event):
 	if event.is_action("escape"):
