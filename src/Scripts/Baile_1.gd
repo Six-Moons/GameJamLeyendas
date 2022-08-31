@@ -5,7 +5,7 @@ func _on_Conductor_measure(position):
 
 func _on_Conductor_beat(position):
 	song_position_in_beats = position
-	if song_position_in_beats >= 208:
+	if song_position_in_beats >= 207:
 		end_song(score, 224)
 	elif song_position_in_beats >= 202:
 		spawn_1_beat = 0
