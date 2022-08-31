@@ -1,1 +1,29 @@
-{"color":"#ffc1f977","default_speaker":false,"description":"","display_name":"","display_name_bool":false,"id":"character-1618728578.json","name":"Quetzalcóatl","offset_x":0,"offset_y":-15,"portraits":[{"name":"Default","path":"res://assets/Sprites/personajes/quetz/Quetzalcoatl.png"},{"name":"QuetzalcoatlNay","path":"res://assets/Sprites/personajes/quetz/QuetzalcoatlNay.png"},{"name":"QuetzalcoatlYay","path":"res://assets/Sprites/personajes/quetz/QuetzalcoatlYay.png"}],"scale":65}
+{
+	"color": "#ffc1f977",
+	"description": "",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1618728578.json",
+	"mirror_portraits": false,
+	"name": "Quetzalcóatl",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": -220,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://assets/Sprites/personajes/quetz/Quetzalcoatl.png"
+		},
+		{
+			"name": "QuetzalcoatlNay",
+			"path": "res://assets/Sprites/personajes/quetz/QuetzalcoatlNay.png"
+		},
+		{
+			"name": "QuetzalcoatlYay",
+			"path": "res://assets/Sprites/personajes/quetz/QuetzalcoatlYay.png"
+		}
+	],
+	"scale": 50,
+	"theme": ""
+}

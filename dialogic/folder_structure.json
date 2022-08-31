@@ -1,0 +1,72 @@
+{
+	"files": [
+
+	],
+	"folders": {
+		"Characters": {
+			"files": [
+				"character-1618709187.json",
+				"character-1618709198.json",
+				"character-1618728557.json",
+				"character-1618728578.json",
+				"character-1618739151.json",
+				"character-1618709165.json"
+			],
+			"folders": {
+
+			},
+			"metadata": {
+				"color": null,
+				"folded": false
+			}
+		},
+		"Definitions": {
+			"files": [
+				"1618764153-648",
+				"1618760347-364",
+				"1618760521-267",
+				"1618760511-557",
+				"1618760499-731"
+			],
+			"folders": {
+
+			},
+			"metadata": {
+				"color": null,
+				"folded": false
+			}
+		},
+		"Themes": {
+			"files": [
+				"theme-1618727359.cfg"
+			],
+			"folders": {
+
+			},
+			"metadata": {
+				"color": null,
+				"folded": false
+			}
+		},
+		"Timelines": {
+			"files": [
+				"timeline-1618737670.json",
+				"timeline-1618738482.json",
+				"timeline-1618738798.json",
+				"timeline-1618739098.json",
+				"timeline-1618756151.json",
+				"timeline-1618763922.json",
+				"timeline-1618764308.json",
+				"timeline-1618709146.json",
+				"timeline-1650989145.json"
+			],
+			"folders": {
+
+			},
+			"metadata": {
+				"color": null,
+				"folded": false
+			}
+		}
+	}
+}

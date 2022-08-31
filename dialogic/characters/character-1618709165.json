@@ -1,1 +1,29 @@
-{"color":"#ffff5f5f","default_speaker":false,"description":"Goth gf","display_name":"","display_name_bool":false,"id":"character-1618709165.json","name":"Cadeja","offset_x":0,"offset_y":10,"portraits":[{"name":"Default","path":"res://assets/Sprites/personajes/cadeja/cadeja.png"},{"name":"cadejaNay","path":"res://assets/Sprites/personajes/cadeja/cadejaNay.png"},{"name":"cadejaYay","path":"res://assets/Sprites/personajes/cadeja/cadejaYay.png"}],"scale":45}
+{
+	"color": "#ffff5f5f",
+	"description": "Goth gf",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1618709165.json",
+	"mirror_portraits": false,
+	"name": "Cadeja",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": -220,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://assets/Sprites/personajes/cadeja/cadeja.png"
+		},
+		{
+			"name": "cadejaNay",
+			"path": "res://assets/Sprites/personajes/cadeja/cadejaNay.png"
+		},
+		{
+			"name": "cadejaYay",
+			"path": "res://assets/Sprites/personajes/cadeja/cadejaYay.png"
+		}
+	],
+	"scale": 45,
+	"theme": ""
+}
